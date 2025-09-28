@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>perla-metro-Stations-Service</name>
+    </assembly>
+    <members>
+        <member name="T:perla_metro_Stations_Service.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:perla_metro_Stations_Service.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:perla_metro_Stations_Service.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:perla_metro_Stations_Service.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.CreateStation(perla_metro_Stations_Service.src.DTOs.CreateStationDto)">
+            <summary>
+            Crear una nueva estación
+            </summary>
+            <param name="createStationDto">Datos de la nueva estación</param>
+            <returns>Información de la estación creada</returns>
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.GetAllStations(System.String,System.Nullable{System.Boolean},System.Nullable{perla_metro_Stations_Service.src.Models.Enums.StationType})">
+            <summary>
+            Obtener todas las estaciones (solo para administradores)
+            </summary>
+            <param name="nameFilter">Filtro por nombre (opcional)</param>
+            <param name="isActive">Filtro por estado activo/inactivo (opcional)</param>
+            <param name="type">Filtro por tipo de estación (opcional)</param>
+            <returns>Lista de estaciones</returns>
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.GetStationById(System.Guid)">
+            <summary>
+            Obtener una estación por su ID
+            </summary>
+            <param name="id">ID de la estación</param>
+            <returns>Información detallada de la estación</returns>
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.UpdateStation(System.Guid,perla_metro_Stations_Service.src.DTOs.UpdateStationDto)">
+            <summary>
+            Actualizar una estación existente
+            </summary>
+            <param name="id">ID de la estación</param>
+            <param name="updateStationDto">Datos a actualizar</param>
+            <returns>Información actualizada de la estación</returns>
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.DeleteStation(System.Guid)">
+            <summary>
+            Eliminar una estación (soft delete - solo administradores)
+            </summary>
+            <param name="id">ID de la estación</param>
+            <returns>Confirmación de eliminación</returns>
+        </member>
+        <member name="M:perla_metro_Stations_Service.src.Controllers.StationsController.CheckStationExists(System.Guid)">
+            <summary>
+            Verificar si una estación existe
+            </summary>
+            <param name="id">ID de la estación</param>
+            <returns>Estado de existencia de la estación</returns>
+        </member>
+    </members>
+</doc>
