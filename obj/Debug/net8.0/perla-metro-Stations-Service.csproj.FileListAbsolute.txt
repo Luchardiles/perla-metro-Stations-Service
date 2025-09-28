@@ -19,11 +19,6 @@ C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-metro-Station
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-metro-Stations-Service.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets\msbuild.perla-metro-Stations-Service.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets\msbuild.build.perla-metro-Stations-Service.props
-C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.perla-metro-Stations-Service.props
-C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.perla-metro-Stations-Service.props
-C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\scopedcss\bundle\perla-metro-Stations-Service.styles.css
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-me.8C7E2C70.Up2Date
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-metro-Stations-Service.dll
@@ -138,3 +133,12 @@ C:\Users\LuisF\perla-metro-Stations-Service\bin\Debug\net8.0\runtimes\browser\li
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-metro-Stations-Service.sourcelink.json
 C:\Users\LuisF\perla-metro-Stations-Service\bin\Debug\net8.0\perla-metro-Stations-Service.xml
 C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\perla-metro-Stations-Service.xml
+C:\Users\LuisF\perla-metro-Stations-Service\bin\Debug\net8.0\perla-metro-Stations-Service.staticwebassets.endpoints.json
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\LuisF\perla-metro-Stations-Service\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\LuisF\perla-metro-Stations-Service\bin\Debug\net8.0\DotNetEnv.dll
+C:\Users\LuisF\perla-metro-Stations-Service\bin\Debug\net8.0\Sprache.dll

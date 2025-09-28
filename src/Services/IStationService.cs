@@ -2,7 +2,8 @@ using perla_metro_Stations_Service.src.Models;
 using perla_metro_Stations_Service.src.DTOs;
 using perla_metro_Stations_Service.src.Data;
 using perla_metro_Stations_Service.src.Models.Enums;
-
+/// <summary>   
+/// Interfaz del servicio de estaciones.
 namespace perla_metro_Stations_Service.src.Services
 {
     public interface IStationService

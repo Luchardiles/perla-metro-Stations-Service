@@ -1,5 +1,7 @@
 using perla_metro_Stations_Service.src.Models.Enums;    
-
+/// <summary>   
+/// DTO para obtener todas las estaciones.
+ 
 namespace perla_metro_Stations_Service.src.DTOs
 {
     public class GetAllStationsDto

@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using perla_metro_Stations_Service.src.Models;
 using perla_metro_Stations_Service.src.Models.Enums;
 
+/// <summary>   
+/// Contexto de base de datos para MySQL con configuración de la entidad Station.
 namespace perla_metro_Stations_Service.src.Data
 {
     public class MysqlDbContext : DbContext
@@ -20,7 +22,7 @@ namespace perla_metro_Stations_Service.src.Data
             modelBuilder.Entity<Station>(entity =>
             {
                 entity.HasKey(e => e.Id);
-                
+
                 entity.Property(e => e.Id)
                     .HasColumnType("char(36)")
                     .ValueGeneratedNever(); // UUID no autoincremental

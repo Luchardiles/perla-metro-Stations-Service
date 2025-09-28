@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "MdKlXAVHzB8pifY/k6Y6SM9o+T4JPvtkA72nrhLS9P0=",
-  "Source": "perla-metro-Stations-Service",
-  "BasePath": "_content/perla-metro-Stations-Service",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"KZgiOufQKgRFwkiFl6wzJ09/nVsVIQsOder7tPLZHew=","Source":"perla-metro-Stations-Service","BasePath":"_content/perla-metro-Stations-Service","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

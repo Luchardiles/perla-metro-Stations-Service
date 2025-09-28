@@ -6,8 +6,12 @@ using perla_metro_Stations_Service.src.Middlewares;
 using perla_metro_Stations_Service.src.Services;
 using perla_metro_Stations_Service.src.Data; 
 using System.Reflection;
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+Env.Load();
 
 // Configuración de servicios
 builder.Services.AddControllers()

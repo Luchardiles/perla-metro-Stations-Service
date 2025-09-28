@@ -1,13 +1,17 @@
 using Microsoft.EntityFrameworkCore;
+using DotNetEnv;
 using perla_metro_Stations_Service.src.Data;    
-
+/// <summary>   
+/// Configuración de la base de datos MySQL
+/// </summary>
 namespace perla_metro_Stations_Service.src.Configurations
 {
     public static class MySQLConfiguration
     {
         public static IServiceCollection AddDatabaseConfiguration(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            Env.Load();
+            var connectionString = Environment.GetEnvironmentVariable("MYSQL_CONNECTION_STRING");
             
             services.AddDbContext<MysqlDbContext>(options =>
             {

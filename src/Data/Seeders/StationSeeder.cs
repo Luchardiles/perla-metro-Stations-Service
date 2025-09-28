@@ -2,7 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using perla_metro_Stations_Service.src.Models;
 using perla_metro_Stations_Service.src.Models.Enums;
      
-
+/// <summary>
+/// Clase estática para sembrar datos iniciales en la base de datos.
 namespace perla_metro_Stations_Service.src.Data.Seeders
 {
     public static class StationSeeder

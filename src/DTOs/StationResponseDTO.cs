@@ -1,4 +1,7 @@
 
+/// <summary>   
+/// DTO para la respuesta de una estación.
+
 namespace perla_metro_Stations_Service.src.DTOs
 {
     public class StationResponseDto

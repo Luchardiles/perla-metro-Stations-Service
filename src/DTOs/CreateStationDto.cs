@@ -1,6 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using perla_metro_Stations_Service.src.Models.Enums;
 
+/// <summary>
+/// DTO para crear una nueva estación.  
+
 namespace perla_metro_Stations_Service.src.DTOs
 {
     public class CreateStationDto

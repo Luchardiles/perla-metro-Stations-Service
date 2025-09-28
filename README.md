@@ -26,7 +26,6 @@ Servicio de gestión de estaciones para el sistema de transporte subterráneo Pe
 - **Filtros**: Búsqueda por múltiples criterios
 - **Logging**: Registro detallado de operaciones
 - **Manejo de Errores**: Middleware centralizado
-- **Documentación**: Swagger/OpenAPI integrado
 
 ## Configuración del Entorno
 
@@ -39,7 +38,7 @@ Servicio de gestión de estaciones para el sistema de transporte subterráneo Pe
 ### Variables de Entorno
 ```bash
 # Producción (Railway)
-ConnectionStrings__ProductionConnection="Server=your_railway_host;Port=3306;Database=railway;Uid=root;Pwd=your_railway_password;"
+ConnectionStrings__ProductionConnection="Server=trolley.proxy.rlwy.net;Port=58674;Database=railway;Uid=root;Pwd=kjhXaiJxIEvIdXUXuUTdcMbiLxQTISOu;SslMode=Preferred;"
 ```
 
 ## Instalación y Ejecución
@@ -54,8 +53,21 @@ cd perla-metro-station-service
 ```bash
 dotnet restore
 ```
+### 3. Configurar las variables de entorno:
+- Duplicar el archivo '.env.example' y renombrarlo a '.env':
 
-### 3. Configurar base de datos
+```bash
+cp .env.example .env
+```
+
+- Editar .env y agregar las siguientes claves para el correcto funcionamiento del proyecto:
+
+```bash
+MYSQL_CONNECTION_STRING = "Server=trolley.proxy.rlwy.net;Port=58674;Database=railway;Uid=root;Pwd=kjhXaiJxIEvIdXUXuUTdcMbiLxQTISOu;SslMode=Preferred;"
+```
+
+
+### 4. Configurar base de datos
 ```bash
 # Actualizar cadena de conexión en appsettings.json
 # Crear migraciones
@@ -65,14 +77,14 @@ dotnet ef migrations add InitialCreate
 dotnet ef database update
 ```
 
-### 4. Ejecutar el proyecto
+### 5. Ejecutar el proyecto
 ```bash
 # Desarrollo
 dotnet run
 ```
 
-### 5. Acceder a la API
-- **API Base**: http://localhost:5000/api/stations
+### 6. Acceder a la API
+- **API Base**: http://localhost:5267/api/stations
 ## Endpoints de la API
 
 ### Estaciones
@@ -84,7 +96,6 @@ dotnet run
 | GET | `/api/stations/{id}` | Obtener estación por ID | ❌ |
 | PUT | `/api/stations/{id}` | Actualizar estación | ✅ Admin |
 | DELETE | `/api/stations/{id}` | Eliminar estación (soft) | ✅ Admin |
-| HEAD | `/api/stations/{id}` | Verificar existencia | ❌ |
 
 ## Despliegue en la Nube
 
@@ -94,10 +105,6 @@ dotnet run
 3. Configurar variables de entorno
 4. Desplegar desde GitHub
 
-### Variables de Entorno en Railway
-```
-ConnectionStrings__DefaultConnection=${{MySQL.DATABASE_URL}}
-```
 
 ## Autor
 **Luis Ardiles**  

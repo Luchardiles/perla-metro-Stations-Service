@@ -1,7 +1,9 @@
 using System.Net;
 using System.Text.Json;
 
-namespace perla_metro_Stations_Service.src.Middlewares  
+/// <summary>   
+/// Middleware para el manejo centralizado de excepciones
+namespace perla_metro_Stations_Service.src.Middlewares
 {
     public class ExceptionHandlingMiddleware
     {

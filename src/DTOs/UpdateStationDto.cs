@@ -1,6 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 using perla_metro_Stations_Service.src.Models.Enums;
-
+/// <summary>   
+/// DTO para actualizar una estación.
+ 
 namespace perla_metro_Stations_Service.src.DTOs
 {
     public class UpdateStationDto

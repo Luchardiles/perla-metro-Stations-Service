@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\perla-metro-Stations-Service.props" />
-</Project>
