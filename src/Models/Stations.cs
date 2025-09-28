@@ -1,27 +1,28 @@
-using System;
 using System.ComponentModel.DataAnnotations;
+using perla_metro_Stations_Service.src.Models.Enums;
 
 namespace perla_metro_Stations_Service.src.Models
 {
-    public enum StationType { Origen = 0, Destino = 1, Intermedia = 2 }
-
     public class Station
     {
         [Key]
         public Guid Id { get; set; } = Guid.NewGuid();
 
         [Required]
-        public string Nombre { get; set; } = null!;
+        public string Name { get; set; } = string.Empty;
 
         [Required]
-        public string Ubicacion { get; set; } = null!;
+        public string Location { get; set; } = string.Empty;
 
         [Required]
-        public StationType TipoParada { get; set; }
+        public StationType Type { get; set; }
 
-        // Soft delete flag
-        public bool Activa { get; set; } = true;
+        public bool IsActive { get; set; } = true;
 
-        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
+        // Campos de auditoría
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime? UpdatedAt { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public bool IsDeleted { get; set; } = false;
     }
 }
