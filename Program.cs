@@ -80,6 +80,7 @@ builder.Services.AddCors(options =>
             "http://localhost:3000",
             "http://localhost:5000",
             "http://localhost:5173",
+            "http://localhost:5267",
             "https://perla-metro-frontend.vercel.app"
         )
         .AllowAnyMethod()
@@ -164,4 +165,4 @@ if (app.Environment.IsDevelopment())
 
 app.Logger.LogInformation("Station Service iniciado en el entorno: {Environment}", app.Environment.EnvironmentName);
 
-app.Run();
+app.Run("http://localhost:5267");

@@ -85,6 +85,7 @@ dotnet run
 
 ### 6. Acceder a la API
 - **API Base**: http://localhost:5267/api/stations
+- **Swagger UI** : http://localhost:5267/swagger/index.html
 ## Endpoints de la API
 
 ### Estaciones
@@ -105,6 +106,10 @@ dotnet run
 3. Configurar variables de entorno
 4. Desplegar desde GitHub
 
+## Ejecución en la nube
+
+La API está desplegada y disponible en:
+[https://perla-metro-stations-service-zdgq.onrender.com/swagger/index.html](https://https://perla-metro-stations-service-zdgq.onrender.com/swagger/index.html)
 
 ## Autor
 **Luis Ardiles**  
